@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body bgcolor="black" text="white">
+    <div>
+        <center>
+        
+            <!-- Contact Us -->
+            <h1 style="color: brown;">Contact Us</h1>
+            <hr width="50%">
+            <!--name -->
+            <form>
+            <label for="name">Name:</label>
+            <input 
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your Name"
+            maxlength="15"
+            required> <br><br>
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email"
+            id="email"
+            name="email"
+            placeholder="Enter the Email id"
+            required> <br><br>
+            <!-- phone no. -->
+         <label for="phone">Phone Number:</label>
+         <input type="tel"
+           id="phone"
+           name="phone"
+           placeholder="Enter 10-digit phone number"
+           pattern="[0-9]{10}"
+          required><br><br>
+             <!-- Subject -->
+        <label for="subject">Subject:</label>
+        <input 
+            type="text" 
+            id="subject" 
+            name="subject" 
+            placeholder="Enter subject" 
+            maxlength="100" 
+            required>
+        <br><br>
+        <!-- Message -->
+       <label for="message">Message:</label>
+        <textarea 
+            id="message" 
+            name="message" 
+            placeholder="Write your message here..." 
+            maxlength="300" 
+            required>
+        </textarea>
+        <br><br>
+            <!-- Submit -->
+          <input type="submit" value="Send Message">
+          <hr width="50%">
+    </form>
+          <p>&copy; <span style="color: brown;">2026 Local Business. All Rights Reserved.</span></p>
+    
+        <br><br>
+
+
+        </center>
+    </div>
+    
+</body>
+</html>
