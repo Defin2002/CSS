@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: black;
+            
+        }
+
+        .outer{
+            border: 5px solid red;
+            padding: 30px;
+            width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+        .middle {
+            border: 4px purple;
+             border-style: dotted;
+             padding: 25px;
+        }
+        .inner{
+            border: 3px powderblue;
+            border-style: groove;
+            padding: 20px;
+            
+        }
+
+    </style>
+</head>
+<body text="white"> 
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <p>
+This is a layered box model using three borders.
+</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
