@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Contact Card</title>
+    <link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+<text y='0.9em' font-size='90'>📧</text>
+</svg>">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+/* Main container */
+.container {
+    margin-top: 80px; 
+    display: flex;
+    justify-content: center;
+}
+
+/* Profile Section */
+.profile-box {
+    width: 1000px;
+    height: 200px;
+    background-color:rgb(239, 229, 231);
+    border: 1px groove #ebc8c8;
+    padding: 20px;
+    position: relative;
+    overflow: auto; 
+   
+}
+
+/* Profile Image */
+.profile-box img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+/* Text Content */
+.profile-content {
+    text-align: center;
+}
+
+/* Contact Info Box */
+.contact-box {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 140px;    
+    height: 100px;     
+  background-color: rgb(214, 214, 233);  
+    padding: 6px;     
+    text-align: center;
+    border-left: 2px solid #333;
+    font-size: 12px; 
+    border-radius: 3px;
+}
+/* Clear float */
+.clear {
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    Company Contact Card 📧 
+</div>
+
+<div class="container">
+    <div class="profile-box">
+
+        <!-- Profile Image -->
+        <img src="https://avatars.githubusercontent.com/u/202610864?s=400&u=6fd68fe17c2fb056502dcf47ea3e34ee64952996&v=4" alt="Profile Image">
+
+        <!-- Profile Content -->
+        <div class="profile-content">
+            <h2>Defin D. Franklin</h2>
+            <hr width="200px">
+            <h4>Software Engineer</h4>
+            <p>
+                Franklin is an experienced developer specializing in web technologies.
+               He works on building scalable and efficient applications for modern businesses.
+               
+            </p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-box">
+            <h4>Contact Info</h4>
+            <p>📞 9677447366</p>
+            <p>📧 defin@example.com</p>
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+</div>
+
+</body>
+</html>
