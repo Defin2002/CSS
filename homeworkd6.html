@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Featured Blog Section</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f2f2f2;
+      padding:30px;
+    }
+
+    .blog-section{
+      display:flex;
+      gap:20px;
+      justify-content:center;
+      background:white;
+      padding:20px;
+      border-radius:12px;
+    }
+
+    .blog-card{
+      width:300px;
+      background:#fafafa;
+      padding:15px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .blog-card h2{
+      margin-bottom:10px;
+      font-size:24px;
+    }
+
+    /* Images ending with .jpg */
+    img[src$=".jpg"]{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+
+      border-top-right-radius:25px;
+      border-bottom-left-radius:25px;
+    }
+
+    p{
+      margin:10px 0;
+      color:#555;
+    }
+
+    /* Links starting with https */
+    a[href^="https"]{
+      color:red;
+      font-weight:bold;
+      text-decoration:none;
+    }
+
+    a:hover{
+      text-decoration:underline;
+    }
+
+    /* Small Screens */
+    @media (max-width:600px){
+
+      .blog-section{
+        flex-direction:column;
+        align-items:center;
+      }
+
+      .blog-card h2{
+        font-size:18px;
+      }
+
+      p,a{
+        font-size:14px;
+      }
+    }
+
+    /* Portrait Orientation */
+    @media (orientation:portrait){
+
+      .blog-section{
+        background:lightyellow;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <section class="blog-section">
+
+    <!-- Blog 1 -->
+    <div class="blog-card">
+
+      <h2>Travel Blog</h2>
+
+      <img 
+      src="https://www.travelcenter.uk/blog/wp-content/uploads/2018/03/shutterstock_175007894_Travel-the-world-monument-concept.jpg"
+      alt="Travel">
+
+      <p>
+        Explore beautiful beaches and amazing travel destinations.
+      </p>
+
+      <a href="https://www.travelcenter.uk/blog/airport-tips-to-travel-like-a-pro/">
+        Read More
+      </a>
+
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="blog-card">
+
+      <h2>Food Blog</h2>
+
+      <img 
+      src="https://www.justwords.in/wp-content/uploads/2020/10/indian-food-image.jpg"
+      alt="Food">
+
+      <p>
+        Discover delicious recipes and healthy meals every day.
+      </p>
+
+      <a href="https://www.justwords.in/blog/recipe-good-food-blog/">
+        Read More
+      </a>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
